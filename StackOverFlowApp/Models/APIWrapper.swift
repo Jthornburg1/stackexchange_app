@@ -21,3 +21,14 @@ extension APIWrapper {
         items = serialization.value(forKey: Keys.items) ?? []
     }
 }
+
+struct APIWrapperResource: APIResource {
+    
+    typealias Model = APIWrapper
+    
+    var methodPath: String = ""
+    
+    func makeModel(serialization: Serialization) -> APIWrapper {
+        return APIWrapper(serialization: serialization)
+    }
+}

@@ -38,3 +38,13 @@ extension Question {
         }
     }
 }
+
+struct QuestionsResource: APIResource {
+    typealias Model = Question
+    
+    let methodPath: String = "/questions"
+    
+    func makeModel(serialization: Serialization) -> QuestionsResource.Model {
+        return Question(serialization: serialization)
+    }
+}

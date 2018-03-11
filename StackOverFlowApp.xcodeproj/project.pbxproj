@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D27A904A2054A2BC0065C0C0 /* APIResourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27A90492054A2BC0065C0C0 /* APIResourceProtocol.swift */; };
 		D27EC55F20463B5900176445 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27EC55E20463B5900176445 /* AppDelegate.swift */; };
 		D27EC56120463B5900176445 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27EC56020463B5900176445 /* ViewController.swift */; };
 		D27EC56420463B5900176445 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D27EC56220463B5900176445 /* Main.storyboard */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D27A90492054A2BC0065C0C0 /* APIResourceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResourceProtocol.swift; sourceTree = "<group>"; };
 		D27EC55B20463B5900176445 /* StackOverFlowApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StackOverFlowApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D27EC55E20463B5900176445 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D27EC56020463B5900176445 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 				D27EC590204A289F00176445 /* User.swift */,
 				D27EC592204A2B1400176445 /* APIWrapper.swift */,
 				D2F2ECC5204C2F5500488DA3 /* Serialization.swift */,
+				D27A90492054A2BC0065C0C0 /* APIResourceProtocol.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 				D27EC58E20463BA900176445 /* Question.swift in Sources */,
 				D27EC56120463B5900176445 /* ViewController.swift in Sources */,
 				D2F2ECC6204C2F5500488DA3 /* Serialization.swift in Sources */,
+				D27A904A2054A2BC0065C0C0 /* APIResourceProtocol.swift in Sources */,
 				D27EC55F20463B5900176445 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -31,3 +31,35 @@ extension User {
         }
     }
 }
+
+struct UsersResource: APIResource  {
+    
+    typealias Model = User
+    
+    var methodPath: String = "/users"
+    
+    func makeModel(serialization: Serialization) -> User {
+        return User(serialization: serialization)
+    }
+    
+    
+}
+// Alternative approach using functional programming
+//struct User: JSONDecodable {
+//    let id: Int
+//    let name: String
+//    let email: String
+//
+//    static func create(id: Int)(name: String)(email: String) -> User {
+//        return User(id: id, name: name, email: email)
+//    }
+//
+//    static func decode(json: JSON) -> User? {
+//        return JSONObject(json) >>> { d in
+//            User.create <^>
+//                d["id"]    >>> JSONInt    <*>
+//                d["name"]  >>> JSONString <*>
+//                d["email"] >>> JSONString
+//        }
+//}
+
